@@ -62,10 +62,10 @@ for day in range(days):
     D.append(d)
     G.append(g)
 
-    if day%10==0:
-        alpha *= 1
-        beta *=1.03
-        gamma *=1.01
+    if day%50==0:
+        alpha *= 1.01
+        beta *=0.99
+        gamma *=0.99
     if day%20==0:
         print(f"day: {day+1} --> n: {int(n)}, s: {int(s)}, i: {int(i)}, c: {int(c)}, d: {int(d)}, r: {int(r)}, n: {int(g)}")
     '''if day%100==0:
