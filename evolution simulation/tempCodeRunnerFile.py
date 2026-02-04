@@ -1,0 +1,1 @@
+r = random.uniform(1,100)
