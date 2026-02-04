@@ -12,7 +12,7 @@ n = s + i + c
 beta = 0.1 # infections odd
 gamma = 0.01 # deaths odd
 alpha = 0.02 # cure odd
-days = 700
+days = 500
 
 S = [s]
 I = [i]
@@ -74,8 +74,8 @@ for day in range(days):
     '''if day % 100 == 0:
         beta *= 2
         gamma *= 1.2'''
-    if int(i) == 0: #or int(s) <= 0:
-        break
+    '''if int(i) == 0: #or int(s) <= 0:
+        break'''
 
 plt.plot(S, label = "Healthy")
 plt.plot(I, label = "Infected")
