@@ -3,7 +3,8 @@ import struct
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MNIST_DIR = os.path.join(BASE_DIR, "mnist")
+MNIST_DIR = os.path.join(BASE_DIR, "..", "datasets", "mnist")
+MNIST_DIR = os.path.abspath(MNIST_DIR)
 
 def load_images(path):
     with open(path, "rb") as f:

@@ -6,11 +6,10 @@ import random
 import time
 
 start_mega = time.time()
-# --------------------------------------------------
-# Resolve paths relative to THIS file (robust)
-# --------------------------------------------------
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MNIST_DIR = os.path.join(BASE_DIR, "mnist")
+MNIST_DIR = os.path.join(BASE_DIR, "..", "datasets", "mnist")
+MNIST_DIR = os.path.abspath(MNIST_DIR)
 
 # --------------------------------------------------
 # Load MNIST (already parsed + normalized)
